@@ -22,6 +22,30 @@ LFS files download automatically when you clone or pull. If you find a file that
 git lfs pull
 ```
 
+### Forgot to run `git lfs install`?
+
+If you cloned before running `git lfs install`, Git's LFS hooks were never registered and your working tree will contain pointer files instead of real assets. Fix it in three steps:
+
+1. Register the LFS hooks:
+
+   ```sh
+   git lfs install
+   ```
+
+2. Fetch and check out all LFS files for the current branch:
+
+   ```sh
+   git lfs pull
+   ```
+
+3. Confirm the files are real assets — they should no longer be small text files starting with `version https://git-lfs.github.com/spec/v1`.
+
+If some files still appear as pointers after step 2, force a re-checkout of all tracked paths:
+
+```sh
+git lfs checkout
+```
+
 ## Migrating existing large files to LFS
 
 If a large file was committed to the repository *before* LFS tracking was configured, the full file is still sitting in Git's history. That history needs to be rewritten to clean it up.
