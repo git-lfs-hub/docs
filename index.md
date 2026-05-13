@@ -1,17 +1,57 @@
 ---
 title: Welcome
+layout: full
+bodyClass: sidebar-collapsed
+# noStyle: true
+# components:
+#   meta: true
+#   favicon: true
+#   css: true
+#   menubar: true    # Use the site's top navigation
+#   scripts: true    # Enable interactive components
+#   mainScripts: true
 ---
 
-# Welcome to {{title}}
+<style>.toc-sidebar { display: none; }</style>
+<script>document.body.classList.add('sidebar-collapsed');</script>
 
-We host all of our code and creative assets on [GitHub]({{github-home}}). Large files — textures, renders, video, audio, and other binaries — are stored using **Git LFS** (Large File Storage), served from our own LFS server at `{{lfs-server}}`. The Quick Start below gets you set up from scratch.
+::: hero layout:split glow:true
+# Version-controlled assets for our whole team.
+Code lives on [GitHub]({{github-home}}). Large files — textures, renders, video, and audio — are served from our own LFS server.
 
-::: callout info "Why Git & GitHub?"
-Git tracks every change to every file, so you can always go back to an earlier version, see who changed what, and collaborate without overwriting each other's work. GitHub is the cloud platform we use to host those repositories. [Learn more →](why-git.md)
+::: button "Quick Start" #quick-start color:blue
+
+== side
+
+```sh "TLDR;"
+# Log in
+gh auth login
+gh auth setup-git
+gh auth setup-git -h {{lfs-server}}
+
+# Enable LFS
+git lfs install
+
+# Clone — LFS files included automatically
+git clone <repository-url>
+```
 :::
 
-::: callout info "Why LFS?"
-Git works best with text files. Large binary files — images, video, 3D assets — bloat a repository and make it slow to download. LFS keeps those files on a dedicated server and stores only a small pointer inside Git, so the repository stays fast. [Learn more →](why-git-lfs.md)
+::: grids
+::: grid
+::: card "Why Git?" icon:github
+Full version history for every file. Roll back anything, see who changed what, and collaborate without conflicts.
+
+[Learn more](why-git.md)
+:::
+:::
+::: grid
+::: card "Why LFS?" icon:hard-drive
+Large binaries bloat Git and slow it down. LFS stores them on a dedicated server, only keeping a pointer in the repo.
+
+[Learn more](why-git-lfs.md)
+:::
+:::
 :::
 
 ## Quick Start
