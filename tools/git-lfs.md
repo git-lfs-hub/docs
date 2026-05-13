@@ -10,10 +10,6 @@ Git LFS stores large binary files outside the repository, keeping clones fast. A
 git lfs install
 ```
 
-::: callout warning "`git lfs install` must run before you clone"
-Without it, Git doesn't know about LFS and will check out pointer files instead of the real assets. See [Forgot to run `git lfs install`?](../lfs/index.md#forgot-to-run-git-lfs-install) for recovery steps.
-:::
-
 ## If `git lfs install` fails
 
 Git LFS is usually bundled with Git or installed automatically by your package manager. If the command above fails with a "command not found" error, install it manually:

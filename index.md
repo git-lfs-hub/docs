@@ -47,10 +47,6 @@ Git works best with text files. Large binary files — images, video, 3D assets 
    git lfs install
    ```
 
-   ::: callout warning "`git lfs install` must run before you clone"
-   Without it, Git doesn't know about LFS and will check out pointer files instead of the real assets. See [Forgot to run `git lfs install`?](lfs/index.md#forgot-to-run-git-lfs-install) for recovery steps.
-   :::
-
    If the command fails with "command not found", see [Git LFS](tools/git-lfs.md) for installation steps.
 
 4. **Clone a repository**
@@ -71,6 +67,10 @@ Git works best with text files. Large binary files — images, video, 3D assets 
 
    Go to **File → Clone Repository**, paste the URL, and choose a local folder.
 
+   :::
+
+   ::: callout warning "Complete step 3 before cloning"
+   Without `git lfs install`, Git doesn't know about LFS and will check out pointer files instead of the real assets. See [Forgot to run `git lfs install`?](lfs/index.md#forgot-to-run-git-lfs-install) for recovery steps.
    :::
 
 :::
