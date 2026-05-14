@@ -1,6 +1,6 @@
-# {{org}} LFS Docs
+# GitHub LFS Server Docs
 
-Documentation site for onboarding {{org}} team members to Git, GitHub, and the internal Git LFS server at `{{lfs-server}}`.
+Companion docs site for onboarding team members to Git, GitHub, and an internal [github-lfs-server](https://github.com/pasha-kuznetsov/github-lfs-server).
 
 Built with [`@docmd/core`](https://github.com/nicholasgasior/docmd).
 
@@ -19,6 +19,6 @@ bun run build
 
 ## Configuration
 
-Site variables (title, GitHub org URL, LFS server hostname) live in `vars.json` and are injected into Markdown files via the Handlebars plugin.
+Site variables (org, title, github-home, etc) live in `vars.json` and are injected into Markdown files via the Handlebars plugin.
 
 Docs source is in `docs/`. Assets (logo, favicon, custom CSS) are in `assets/`.

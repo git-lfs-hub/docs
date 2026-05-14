@@ -1,0 +1,7 @@
+node_modules/
+site/
+
+.docmd
+docmd.config-*.js
+
+vars.json

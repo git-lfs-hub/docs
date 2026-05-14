@@ -4,8 +4,9 @@
   "private": true,
   "packageManager": "bun@1.3.13",
   "scripts": {
-    "dev": "docmd dev",
-    "build": "docmd build"
+    "init": "scripts/init.sh",
+    "dev": "bun run init && docmd dev",
+    "build": "bun run init && docmd build"
   },
   "devDependencies": {
     "@docmd/core": "^0.8.0",

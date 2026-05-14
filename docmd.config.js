@@ -1,8 +1,12 @@
 import { defineConfig } from "@docmd/core";
 import vars from "./vars.json" with { type: "json" };
 
-const handlebarsPlugin = new URL("./plugins/handlebars-plugin.js", import.meta.url).href;
-const customPlugin = new URL("./plugins/custom-plugin.js", import.meta.url).href;
+const handlebarsPlugin = new URL(
+  "./plugins/handlebars-plugin.js",
+  import.meta.url,
+).href;
+const customPlugin = new URL("./plugins/custom-plugin.js", import.meta.url)
+  .href;
 
 export default defineConfig({
   plugins: {
@@ -15,10 +19,10 @@ export default defineConfig({
   },
   favicon: "assets/favicon.png",
   logo: {
-    light: "assets/logo.png",
-    dark: "assets/logo.png",
+    light: `assets/${vars["logo-light"]}`,
+    dark: `assets/${vars["logo-dark"]}`,
     href: "/",
-    alt: "{{org}} GitHub Logo",
+    alt: "{{title}} Logo",
     // height: "32px",
   },
   layout: {
