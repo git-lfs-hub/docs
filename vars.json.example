@@ -2,7 +2,7 @@
   "org": "Our-Org",
   "title": "Our-Org GitHub",
   "github-home": "https://github.com/our-org",
-  "lfs-server": "lfs-server.our-org.workers.dev"
+  "lfs-server": "lfs-server.our-org.workers.dev",
   "logo-light": "logo.svg",
   "logo-dark": "logo.svg"
 }
