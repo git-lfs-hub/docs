@@ -15,3 +15,6 @@
   font-size: 1rem;
   font-weight: 600;
 }
+.hero-side pre {
+  text-align: left;
+}
