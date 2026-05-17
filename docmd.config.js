@@ -19,8 +19,8 @@ export default defineConfig({
   },
   favicon: "assets/favicon.png",
   logo: {
-    light: `assets/${vars["logo-light"]}`,
-    dark: `assets/${vars["logo-dark"]}`,
+    light: `assets/${vars["bannerLight"]}`,
+    dark: `assets/${vars["bannerDark"]}`,
     href: "/",
     alt: "{{title}} Logo",
     // height: "32px",

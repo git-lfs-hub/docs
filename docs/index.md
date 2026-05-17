@@ -17,7 +17,7 @@ bodyClass: sidebar-collapsed
 
 ::: hero layout:split glow:true
 # Version-controlled assets for our whole team.
-Code lives on [GitHub]({{github-home}}). Large files — textures, renders, video, and audio — are served from our own LFS server.
+Code lives on [GitHub]({{githubHome}}). Large files — textures, renders, video, and audio — are served from our own LFS server.
 
 ::: button "Quick Start" #quick-start color:blue
 
@@ -27,7 +27,7 @@ Code lives on [GitHub]({{github-home}}). Large files — textures, renders, vide
 # Log in
 gh auth login
 gh auth setup-git
-gh auth setup-git -h {{lfs-server}}
+gh auth setup-git -h {{lfsServer}}
 
 # Enable LFS
 git lfs install
@@ -74,7 +74,7 @@ Large binaries bloat Git and slow it down. LFS stores them on a dedicated server
 
    ```sh
    gh auth setup-git
-   gh auth setup-git -h {{lfs-server}}
+   gh auth setup-git -h {{lfsServer}}
    ```
 
    If you installed `git-credential-manager` instead of `gh`, see [`git-credential-manager`](tools/git-credential-manager.md) for the equivalent steps. See [Authentication](auth.md) for full details on both paths.

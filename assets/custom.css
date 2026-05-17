@@ -1,20 +1,22 @@
-.sidebar-header {
+/*.sidebar-header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
   text-align: left;
   padding-left: var(--space-3);
-}
+}*/
 
 .logo-link {
-  display: flex;
+    display: flex;
 }
 
+/*
 .logo-title {
-  font-size: 1rem;
-  font-weight: 600;
-}
+    font-size: 1rem;
+    font-weight: 600;
+}*/
+
 .hero-side pre {
-  text-align: left;
+    text-align: left;
 }

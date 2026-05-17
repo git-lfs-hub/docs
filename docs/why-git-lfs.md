@@ -26,7 +26,7 @@ When you clone the repository or switch branches, LFS automatically downloads th
 
 ## {{org}}'s LFS server
 
-We run our own LFS server at `{{lfs-server}}`. All large assets are stored there. You authenticate to it using `gh` — see the [Quick Start](index.md) for setup, or [`gh` CLI](tools/gh-cli.md) if you need to re-authenticate.
+We run our own LFS server at `{{lfsServer}}`. All large assets are stored there. You authenticate to it using `gh` — see the [Quick Start](index.md) for setup, or [`gh` CLI](tools/gh-cli.md) if you need to re-authenticate.
 
 ::: callout tip
 Once you complete the one-time setup, LFS is completely transparent to your daily workflow. You commit, push, and pull exactly as you always would — LFS handles the large files automatically in the background.

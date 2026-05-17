@@ -1,8 +1,12 @@
+# Cache and build output
+.docmd
 .turbo
 node_modules/
 site/
-
-.docmd
 docmd.config-*.js
 
+# Env
+.env
+
+# Parameters
 vars.json

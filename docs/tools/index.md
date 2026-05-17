@@ -88,7 +88,7 @@ GitHub Desktop handles your GitHub.com sign-in automatically, but it cannot conf
 
 ## Credential helper
 
-A credential helper is needed to authenticate to our LFS server at `{{lfs-server}}`. We recommend `gh` (the GitHub CLI) — it's the simplest path. `git-credential-manager` works too; see [`git-credential-manager`](git-credential-manager.md) for that setup.
+A credential helper is needed to authenticate to our LFS server at `{{lfsServer}}`. We recommend `gh` (the GitHub CLI) — it's the simplest path. `git-credential-manager` works too; see [`git-credential-manager`](git-credential-manager.md) for that setup.
 
 **Recommended: `gh`**
 
