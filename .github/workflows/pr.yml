@@ -23,4 +23,13 @@ jobs:
 
       - run: bun install --frozen-lockfile
 
+      - name: Initialize vars
+        env:
+          VARS_JSON: ${{ env.VARS_JSON || vars.VARS_JSON || secrets.VARS_JSON }}
+        run: |
+          if [ -n "$VARS_JSON" ]; then
+            printf '%s\n' "$VARS_JSON" > vars.json
+          fi
+        shell: bash
+
       - run: bun run build
