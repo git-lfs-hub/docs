@@ -7,6 +7,7 @@ export const plugin = {
 };
 
 export function onPageReady(page) {
+  if (vars.banner) return;
   page.html = page.html.replace(
     /(<a [^>]*class="logo-link"[^>]*>[\s\S]*?<\/a>)/,
     `$1<span class="logo-title">${vars.title}</span>`,

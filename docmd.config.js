@@ -18,13 +18,19 @@ export default defineConfig({
     customCss: ["assets/custom.css"],
   },
   favicon: "assets/favicon.png",
-  logo: {
-    light: `assets/${vars["logo-light"]}`,
-    dark: `assets/${vars["logo-dark"]}`,
-    href: "/",
-    alt: "{{title}} Logo",
-    // height: "32px",
-  },
+  logo: (() => {
+    const pick = (v, k) => typeof v === "string" ? v : v?.[k];
+    const dark = pick(vars.banner, "dark") || pick(vars.logo, "dark");
+    const light = pick(vars.banner, "light") || pick(vars.logo, "light");
+    if (!dark && !light) return undefined;
+    return {
+      dark: dark ? `assets/${dark}` : undefined,
+      light: light ? `assets/${light}` : undefined,
+      href: "/",
+      alt: "{{title}} Logo",
+      // height: "32px",
+    };
+  })(),
   layout: {
     breadcrumbs: false,
     footer: {

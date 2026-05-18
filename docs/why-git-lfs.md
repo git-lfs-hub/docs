@@ -24,9 +24,9 @@ That pointer is just a few bytes. The repository stays lean no matter how many v
 
 When you clone the repository or switch branches, LFS automatically downloads the actual files from the file server in the background. From your perspective, nothing changes — the files are just there.
 
-## {{org}}'s LFS server
+## {{org}} LFS server
 
-We run our own LFS server at `{{lfs-server}}`. All large assets are stored there. You authenticate to it using `gh` — see the [Quick Start](index.md) for setup, or [`gh` CLI](tools/gh-cli.md) if you need to re-authenticate.
+We run our own LFS server at `{{lfs.server}}`. All large assets are stored there. You authenticate to it using `gh` — see the [Quick Start](index.md) for setup, or [`gh` CLI](tools/gh-cli.md) if you need to re-authenticate.
 
 ::: callout tip
 Once you complete the one-time setup, LFS is completely transparent to your daily workflow. You commit, push, and pull exactly as you always would — LFS handles the large files automatically in the background.

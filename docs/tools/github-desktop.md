@@ -37,5 +37,5 @@ flatpak install flathub io.github.shiftey.Desktop
 GitHub Desktop handles your GitHub.com authentication automatically. On first launch it will prompt you to sign in — follow the in-app prompts.
 
 ::: callout warning "LFS server not covered"
-GitHub Desktop does not configure credentials for our LFS server at `{{lfs-server}}`. After signing in, complete the setup using either [`gh`](gh-cli.md) (recommended) or [`git-credential-manager`](git-credential-manager.md).
+GitHub Desktop does not configure credentials for our LFS server at `{{lfs.server}}`. After signing in, complete the setup using either [`gh`](gh-cli.md) (recommended) or [`git-credential-manager`](git-credential-manager.md).
 :::

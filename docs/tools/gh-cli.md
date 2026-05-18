@@ -58,5 +58,5 @@ This registers `gh` as the credential helper for both GitHub.com and our LFS ser
 
 ```sh
 gh auth setup-git
-gh auth setup-git -h {{lfs-server}}
+gh auth setup-git -h {{lfs.server}}
 ```

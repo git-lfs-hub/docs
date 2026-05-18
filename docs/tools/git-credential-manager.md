@@ -32,7 +32,7 @@ Download the `.deb`, `.rpm`, or tarball from the [GCM installation guide](https:
 
 ```sh
 git-credential-manager configure
-git config --global 'credential.https://{{lfs-server}}.provider' github
+git config --global 'credential.https://{{lfs.server}}.provider' github
 ```
 
 GCM will prompt you for credentials automatically the first time you run a `git` command that needs them — a browser window will open for you to sign in.

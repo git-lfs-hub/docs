@@ -1,0 +1,35 @@
+name: PR
+
+on:
+  pull_request:
+
+  workflow_dispatch: # Can run manually from the Actions tab
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Cache bun dependencies
+        uses: actions/cache@v5
+        with:
+          path: ~/.bun/install/cache
+          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
+
+      - run: bun install --frozen-lockfile
+
+      - name: Initialize vars
+        env:
+          VARS_JSON: ${{ env.VARS_JSON || vars.VARS_JSON || secrets.VARS_JSON }}
+        run: |
+          if [ -n "$VARS_JSON" ]; then
+            printf '%s\n' "$VARS_JSON" > vars.json
+          fi
+        shell: bash
+
+      - run: bun run build
