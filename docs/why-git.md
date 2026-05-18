@@ -26,7 +26,7 @@ At any point you can:
 
 ## What does GitHub add?
 
-Git runs locally on your computer. [GitHub]({{github-home}}) is the cloud platform where that history is backed up and shared with your team. With GitHub you can:
+Git runs locally on your computer. [GitHub]({{github.home}}) is the cloud platform where that history is backed up and shared with your team. With GitHub you can:
 
 - **Back up your work** — your full history is safe even if your laptop dies
 - **Collaborate** — teammates can see your changes and you can see theirs, without emailing files back and forth

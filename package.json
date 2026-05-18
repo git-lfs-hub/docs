@@ -1,12 +1,11 @@
 {
-  "name": "github-lfs-server-docs",
+  "name": "@git-lfs-hub/docs",
   "type": "module",
   "private": true,
   "packageManager": "bun@1.3.13",
   "scripts": {
-    "init": "scripts/init.sh",
-    "dev": "bun run init && docmd dev",
-    "build": "bun run init && docmd build"
+    "dev": "docmd dev",
+    "build": "docmd build"
   },
   "devDependencies": {
     "@docmd/core": "^0.8.0",
