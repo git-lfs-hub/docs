@@ -4,9 +4,9 @@ export const plugin = {
   name: "custom",
   version: "1.0.0",
   capabilities: ["build"],
-};
+} as const;
 
-export function onPageReady(page) {
+export function onPageReady(page: { html: string }): void {
   if (vars.banner) return;
   page.html = page.html.replace(
     /(<a [^>]*class="logo-link"[^>]*>[\s\S]*?<\/a>)/,

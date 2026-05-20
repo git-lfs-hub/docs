@@ -2,10 +2,10 @@ import { defineConfig } from "@docmd/core";
 import vars from "./vars.json" with { type: "json" };
 
 const handlebarsPlugin = new URL(
-  "./plugins/handlebars-plugin.js",
+  "./plugins/handlebars-plugin.ts",
   import.meta.url,
 ).href;
-const customPlugin = new URL("./plugins/custom-plugin.js", import.meta.url)
+const customPlugin = new URL("./plugins/custom-plugin.ts", import.meta.url)
   .href;
 
 export default defineConfig({
