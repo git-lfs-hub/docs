@@ -78,8 +78,8 @@ Default to using Bun instead of Node.js.
 
 ```sh
 bun install        # install deps
-bun run dev        # init + docmd dev server (live reload)
-bun run build      # init + docmd build → site/
+bun run dev        # docmd dev server (live reload)
+bun run build      # docmd build → site/
 ```
 
 No test suite. CI runs `bun run build` on PRs.
@@ -90,7 +90,7 @@ Static docs site built with [`@docmd/core`](https://github.com/nicholasgasior/do
 
 ### vars.json
 
-Central config injected everywhere. In deploy pipeline: symlink to `vars.resolved.json` at repo root. For standalone dev: plain file checked in. Keys: `title`, `org`, `lfsServer`, `githubOrg`, `githubAppHome`, etc.
+Central config injected everywhere. In deploy pipeline: symlink to `vars.json` at the deploy root (created by `bun run config` via `config/cli.sh`). For standalone dev: plain file checked in. Keys: `title`, `org`, `lfsServer`, `githubOrg`, `githubAppHome`, etc.
 
 ### Plugins
 
