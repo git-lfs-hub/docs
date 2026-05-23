@@ -42,7 +42,7 @@ bun run build     # docmd build → site/
 
 `bun run build` produces static files under `site/`. Publish that folder to any static host you control. To ship docs *inside* the LFS Worker (ASSETS), use the deploy monorepo: `turbo build` copies `site/` into `server/public/` before `turbo deploy`.
 
-[ci-badge]: https://badgen.net/github/checks/git-lfs-hub/docs/main?icon=vitest&label=CI
+[ci-badge]: https://badgen.net/github/checks/git-lfs-hub/docs/main?icon=markdown&label=CI
 [gh-wf-href]: https://github.com/git-lfs-hub/docs/actions/workflows/main.yml?query=branch%3Amain
 
 [codeql-badge]: https://github.com/git-lfs-hub/docs/actions/workflows/github-code-scanning/codeql/badge.svg
