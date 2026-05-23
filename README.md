@@ -1,5 +1,10 @@
 # Git LFS Hub — docs
 
+[![CI][ci-badge]][gh-wf-href]
+[![CodeQL][codeql-badge]][codeql-href]
+[![Socket][socket-badge]][socket-href]
+[![License][license-badge]][license-href]
+
 The end-user documentation site that ships alongside every [Git LFS Hub](https://github.com/git-lfs-hub) deployment — installing Git LFS, configuring remotes, day-to-day push/pull. Built with [`@docmd/core`](https://github.com/nicholasgasior/docmd), served via the Worker's `ASSETS` binding so onboarding new contributors is a single URL.
 
 For the bigger picture (what the stack does, the deploy flow, the other repos) see the [org overview](https://github.com/git-lfs-hub).
@@ -36,3 +41,15 @@ bun run build     # docmd build → site/
 ### Standalone deployment
 
 `bun run build` produces static files under `site/`. Publish that folder to any static host you control. To ship docs *inside* the LFS Worker (ASSETS), use the deploy monorepo: `turbo build` copies `site/` into `server/public/` before `turbo deploy`.
+
+[ci-badge]: https://badgen.net/github/checks/git-lfs-hub/docs/main?icon=vitest&label=CI
+[gh-wf-href]: https://github.com/git-lfs-hub/docs/actions/workflows/main.yml?query=branch%3Amain
+
+[codeql-badge]: https://github.com/git-lfs-hub/docs/actions/workflows/github-code-scanning/codeql/badge.svg
+[codeql-href]: https://github.com/git-lfs-hub/docs/actions/workflows/github-code-scanning/codeql?query=branch%3Amain
+
+[socket-badge]: https://badgen.net/static/Socket/report/blue?icon=socket
+[socket-href]: https://socket.dev/dashboard/org/git-lfs-hub/repo/@git-lfs-hub/docs
+
+[license-badge]: https://badgen.net/github/license/git-lfs-hub/docs
+[license-href]: LICENSE.md
