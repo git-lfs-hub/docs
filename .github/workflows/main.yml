@@ -8,7 +8,7 @@ on:
 env:
   GLH_VARS_JSON: ${{ vars.GLH_VARS_JSON || secrets.GLH_VARS_JSON }}
 
-permissions: {}
+permissions: { contents: read }
 
 jobs:
   build:
