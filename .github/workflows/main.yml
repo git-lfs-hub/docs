@@ -1,11 +1,14 @@
 name: Main
 
 on:
-  push: { branches: ["main"] }
   pull_request:
+  push: { branches: ["main"] }
   workflow_dispatch: # Can run manually from the Actions tab
 
-permissions: {}
+env:
+  GLH_VARS_JSON: ${{ vars.GLH_VARS_JSON || secrets.GLH_VARS_JSON }}
+
+permissions: { contents: read }
 
 jobs:
   build:
@@ -15,10 +18,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: git-lfs-hub/ci-cd/actions/init-bun@main
+      - uses: git-lfs-hub/ci-cd/actions/init@main
+        with: { peers: config }
 
-      - uses: git-lfs-hub/ci-cd/actions/init-vars@main
-        with:
-          vars-json: ${{ env.GLH_VARS_JSON || vars.GLH_VARS_JSON || secrets.GLH_VARS_JSON }}
-
-      - run: bun run build
+      - run: |
+          bun run config:vars
+          bun run build
