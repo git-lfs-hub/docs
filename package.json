@@ -5,13 +5,18 @@
   "packageManager": "bun@1.3.13",
   "scripts": {
     "config:vars": "git-lfs-hub-config vars .",
-    "dev": "docmd dev",
-    "build": "docmd build"
+    "compile": "tsgo --noEmit",
+    "lint": "oxlint .",
+    "prebuild": "bun run compile && bun run lint",
+    "build": "docmd build",
+    "dev": "docmd dev"
   },
   "devDependencies": {
     "@docmd/core": "^0.8.4",
     "@git-lfs-hub/config": "file:../config",
-    "@types/bun": "^1.3.14"
+    "@types/bun": "^1.3.14",
+    "@typescript/native-preview": "^7.0.0-dev.20260604.1",
+    "oxlint": "^1.68.0"
   },
   "peerDependencies": {
     "typescript": "^6.0.3"
