@@ -48,6 +48,6 @@ git lfs checkout
 
 ## Migrating existing large files to LFS
 
-If a large file was committed to the repository *before* LFS tracking was configured, the full file is still sitting in Git's history. That history needs to be rewritten to clean it up.
+If a large file was committed to the repository _before_ LFS tracking was configured, the full file is still sitting in Git's history. That history needs to be rewritten to clean it up.
 
 Migration rewrites repository history, which affects every team member. This is an Engineer-level task — see the [`git lfs migrate` documentation](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-migrate.adoc) for details.

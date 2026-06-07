@@ -37,11 +37,13 @@ Or download the installer from [git-scm.com](https://git-scm.com/download/mac).
 == tab "Linux"
 
 **Debian / Ubuntu:**
+
 ```sh
 sudo apt install git
 ```
 
 **Fedora / RHEL:**
+
 ```sh
 sudo dnf install git
 ```
@@ -50,9 +52,11 @@ sudo dnf install git
 
 ::: callout info "Configure Git LFS after installing"
 After installing Git, run this to set up [LFS](git-lfs.md) hooks Git needs to handle large files.
+
 ```sh
 git lfs install
 ```
+
 :::
 
 ## Configure your identity

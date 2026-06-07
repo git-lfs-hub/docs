@@ -1,5 +1,5 @@
 ---
-title: "Other: Personal Access Token"
+title: 'Other: Personal Access Token'
 ---
 
 # Personal Access Token

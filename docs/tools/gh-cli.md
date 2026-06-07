@@ -27,11 +27,13 @@ brew install gh
 == tab "Linux"
 
 **Debian / Ubuntu:**
+
 ```sh
 sudo apt install gh
 ```
 
 **Fedora / RHEL:**
+
 ```sh
 sudo dnf install gh
 ```

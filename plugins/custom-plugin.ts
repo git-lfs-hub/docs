@@ -1,9 +1,9 @@
-import vars from "../vars.json" with { type: "json" };
+import vars from '../vars.json' with { type: 'json' };
 
 export const plugin = {
-  name: "custom",
-  version: "1.0.0",
-  capabilities: ["build"],
+  name: 'custom',
+  version: '1.0.0',
+  capabilities: ['build'],
 } as const;
 
 export function onPageReady(page: { html: string }): void {
