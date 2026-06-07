@@ -7,7 +7,7 @@ title: Tracking Files
 LFS works by tracking file patterns in a `.gitattributes` file at the root of your repository. Any file matching a tracked pattern is automatically stored in LFS instead of directly in Git.
 
 ::: callout tip "Track by pattern, not by file"
-Always track a file *type* (e.g., `*.psd`) rather than a specific file. Any new file of that type is then automatically handled by LFS — no one has to remember to do anything special.
+Always track a file _type_ (e.g., `*.psd`) rather than a specific file. Any new file of that type is then automatically handled by LFS — no one has to remember to do anything special.
 :::
 
 ## Setting up tracking for a file type
@@ -49,10 +49,10 @@ Lists all the patterns currently configured for LFS in the repository.
 
 ## Common file types to track
 
-| Type | Extensions |
-|---|---|
+| Type              | Extensions                                             |
+| ----------------- | ------------------------------------------------------ |
 | Images & textures | `.psd`, `.ai`, `.png`, `.jpg`, `.tiff`, `.exr`, `.hdr` |
-| 3D & animation | `.blend`, `.fbx`, `.obj`, `.ma`, `.mb`, `.abc` |
-| Video | `.mp4`, `.mov`, `.avi`, `.mkv` |
-| Audio | `.wav`, `.aiff`, `.flac`, `.mp3` |
-| Archives & builds | `.zip`, `.7z`, `.rar`, `.exe`, `.dmg` |
+| 3D & animation    | `.blend`, `.fbx`, `.obj`, `.ma`, `.mb`, `.abc`         |
+| Video             | `.mp4`, `.mov`, `.avi`, `.mkv`                         |
+| Audio             | `.wav`, `.aiff`, `.flac`, `.mp3`                       |
+| Archives & builds | `.zip`, `.7z`, `.rar`, `.exe`, `.dmg`                  |

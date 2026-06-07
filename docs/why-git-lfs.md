@@ -6,7 +6,7 @@ title: Why Git LFS?
 
 ## The problem with large files in Git
 
-Git is very good at tracking changes in text files — code, configuration, scripts. For text, Git can store just the *difference* between two versions, which is extremely compact.
+Git is very good at tracking changes in text files — code, configuration, scripts. For text, Git can store just the _difference_ between two versions, which is extremely compact.
 
 Binary files are different. A `.psd` or `.blend` file can't be meaningfully "diffed" — every save is a completely new copy. If you commit a 200 MB texture ten times, Git stores all ten copies: 2 GB of history, just for that one file. Multiply that across a whole team and a whole project, and repositories become very slow to clone and painful to work with.
 

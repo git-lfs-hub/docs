@@ -16,7 +16,9 @@ bodyClass: sidebar-collapsed
 <script>document.body.classList.add('sidebar-collapsed');</script>
 
 ::: hero layout:split glow:true
+
 # Version-controlled assets for our whole team.
+
 Code lives on [GitHub]({{github.home}}). Large files — textures, renders, video, and audio — are served from our own LFS server.
 
 ::: button "Quick Start" #quick-start color:blue
@@ -35,6 +37,7 @@ git lfs install
 # Clone — LFS files included automatically
 git clone <repository-url>
 ```
+
 :::
 
 ::: grids

@@ -33,11 +33,13 @@ brew install git-lfs
 == tab "Linux"
 
 **Debian / Ubuntu:**
+
 ```sh
 sudo apt install git-lfs
 ```
 
 **Fedora / RHEL:**
+
 ```sh
 sudo dnf install git-lfs
 ```

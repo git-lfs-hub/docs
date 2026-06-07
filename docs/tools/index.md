@@ -39,11 +39,13 @@ Or download the installer from [git-scm.com](https://git-scm.com/download/mac).
 == tab "Linux"
 
 **Debian / Ubuntu:**
+
 ```sh
 sudo apt install git
 ```
 
 **Fedora / RHEL:**
+
 ```sh
 sudo dnf install git
 ```
@@ -111,11 +113,13 @@ brew install gh
 == tab "Linux"
 
 **Debian / Ubuntu:**
+
 ```sh
 sudo apt install gh
 ```
 
 **Fedora / RHEL:**
+
 ```sh
 sudo dnf install gh
 ```
