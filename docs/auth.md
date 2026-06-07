@@ -37,3 +37,7 @@ You will not be prompted for credentials again — `gh` handles them automatical
 ## Using `git-credential-manager`
 
 `git-credential-manager` is an alternative if you prefer it over `gh` or are in an environment where `gh` isn't available. See [`git-credential-manager`](tools/git-credential-manager.md) for the equivalent steps.
+
+## Using a personal access token
+
+If neither `gh` nor `git-credential-manager` is available, you can authenticate with a personal access token (PAT) as a last resort. GitHub offers two kinds — fine-grained (recommended, scoped to specific repos) and classic. See [Personal Access Token](tools/personal-token.md) for how to generate either and use it.
