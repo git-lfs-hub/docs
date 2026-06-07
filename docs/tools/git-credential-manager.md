@@ -1,5 +1,5 @@
 ---
-title: 'Other: git-credential-manager'
+title: "Other: git-credential-manager"
 ---
 
 # `git-credential-manager`

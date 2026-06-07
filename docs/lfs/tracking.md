@@ -12,6 +12,10 @@ Always track a file _type_ (e.g., `*.psd`) rather than a specific file. Any new 
 
 ## Setting up tracking for a file type
 
+::: callout info
+Setting up a repository from scratch? See [Set up New Repo](../repo-start.md) for the full flow, including pointing the repo at our LFS server.
+:::
+
 ::: steps
 
 1. **Run `git lfs track` with the file pattern**

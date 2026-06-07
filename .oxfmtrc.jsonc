@@ -15,6 +15,10 @@
     {
       "files": ["*.json", "*.jsonc", "*.json5"],
       "options": { "trailingComma": "none" }
+    },
+    {
+      "files": ["*.md"],
+      "options": { "singleQuote": false }
     }
   ]
 }
